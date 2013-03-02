@@ -1,0 +1,18 @@
+.prob_hashtag {
+	font-size: 9pt;
+}
+
+body {
+	font-family: Trebuchet MS;
+	font-size:10pt;
+}
+
+div.actions {
+	font-size: 10pt;
+}
+
+.footer_settings_links {
+	border: 1px solid;
+	padding: 4px;
+	background-color: lightgrey;
+}

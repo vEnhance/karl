@@ -1,0 +1,88 @@
+body
+{
+	background-image: url('http://www.visionsmagazineonline.com/Paramormal/vortex/WormHole.jpg');
+	background-attachment: fixed;
+	background-repeat: repeat;
+	background-position: center center;
+	background-color: #5368C1;
+	font-family: Comic Sans MS;
+	font-size: 10pt;
+	color: #000000;
+}
+a:link		{ color : #2188E0; }
+a:active	{ color : #2188E0; }
+a:visited	{ color : #0066CC; }
+a:hover		{ text-decoration: underline; color : #FF6600; }
+table tr td	{ border-color: #CCCCCC; }
+table tr th	{ border-color: #CCCCCC; background: #CCCCCC; }
+input, select, textarea				{ border-color: #CCCCCC; font-family: Comic Sans MS; }
+input:focus, select:focus, textarea:focus	{ border-color: #CCCCCC; }
+h1
+{
+	font-size: 16pt;
+	color: #FF6600;
+}
+h2
+{
+	font-size: 10pt;
+	color: #0066CC;
+}
+hr
+{
+	border-top-color: #CCCCCC;
+}
+#title
+{
+	font-size: 26pt;
+	color: #FF6600;
+}
+#footer
+{
+	border-color: #CCCCCC;
+}
+.entry
+{
+	border-bottom-color: #CCCCCC;
+}
+.entryContent
+{
+	background-color: #F8F8F8;
+	border-color: #CCCCCC;
+}
+.blockTitle
+{
+	font-size: 14pt;
+	color: #FF6600;
+}
+#calendar
+{
+	background-color: #F0F0F0;
+}
+#calendar th
+{
+	background-color: #CCCCCC;
+	border-color: #CCCCCC;
+}
+#calendar td
+{
+	border-color: #CCCCCC;
+}
+#shoutbox
+{
+	border-color: #CCCCCC;
+}
+#postTable tr td .smilies tr td	{ border-color: #CCCCCC; }
+#postTable tr td .smilies tr th	{ border-color: #CCCCCC; background-color: #CCCCCC; }
+.daycell
+{
+	background-color: #F8F8F8;
+}
+.row1
+{
+	background-color: #F8F8F8;
+}
+
+.row2
+{
+	background-color: #F0F0F0;
+}

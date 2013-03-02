@@ -1,0 +1,54 @@
+ m    m   mm   mmmmm  m     
+ #  m"    ##   #   "# #     
+ #m#     #  #  #mmmm" #     
+ #  #m   #mm#  #   "m #     
+ #   "m #    # #    " #mmmmm
+==============================
+
+Karl (sometimes Korean Amateur RTS League) is a system for managing proposals for contests.  It was written as an improved system for managing the NIMO and OMO contests (National Internet Math Olympiad and Online Math Open, respectively).
+
+Currently the "Contests" and "Users" tables must be manually handled.  This will change eventually.
+
+The database structure is:
+
+	CREATE TABLE `Contests` (
+	   `id` int(11) not null,
+	   `name` varchar(163),
+	   `allow` tinyint(1) default '0',
+	   `except` varchar(42),
+	   `info` text,
+	   PRIMARY KEY (`id`)
+	) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+	CREATE TABLE `Problems` (
+	   `id` int(11) not null auto_increment,
+	   `title` varchar(70),
+	   `statement` text,
+	   `answer` varchar(42),
+	   `author` varchar(42),
+	   `subject` varchar(42),
+	   `difficulty` int(11) default '0',
+	   `time_submit` int(11) default '0',
+	   `cid` int(11),
+	   `zindex` int(11),
+	   `time_last_update` int(11) default '0',
+	   `solution` text,
+	   `comments` text,
+	   `comments_spoiler` text,
+	   `time_last_comment` int(11) default '0',
+	   `votes` int(11) default '0',
+	   PRIMARY KEY (`id`)
+	) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=118;
+
+	CREATE TABLE `Users` (
+	   `username` varchar(42) not null,
+	   `hash` varchar(42),
+	   `groups` text,
+	   `css` int(11) default '53544',
+	   `realname` varchar(63),
+	   `use_ace` tinyint(1) default '1',
+	   `ace_theme` varchar(42) default 'chaos',
+	   PRIMARY KEY (`username`)
+	) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+The website root, SQL user and SQL password should be specified in internal/secret.php.

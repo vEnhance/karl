@@ -1,0 +1,45 @@
+/* The links at the top of the page */
+#main p a {
+	background: none;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+#main p a hover {
+	background: none;
+}
+
+
+a.post-replies {
+	font-size:12pt;
+}
+
+a.hider {
+	color: #797F80;
+}
+
+a.probnum {
+	font-size:14pt;
+	padding: 12px 12px 12px 12px;
+}
+
+/* For view_set.php */
+.set_author_name{
+	color: #0099CC;
+}
+.set_vote_count_positive {
+	color: lightgreen;
+}
+.set_vote_count_negative {
+	color: lightred;
+}
+.set_quick_comments {
+	color: #990099;
+}
+
+
+/* For view_problem.php */
+.prob_hashtag {
+	font-size:11pt;
+}
+

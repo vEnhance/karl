@@ -1,0 +1,88 @@
+body
+{
+	background-image: url('');
+	background-attachment: scroll;
+	background-repeat: repeat;
+	background-position: center center;
+	background-color: #5368C1;
+	font-family: Comic Sans MS;
+	font-size: 8pt;
+	color: #000000;
+}
+a:link		{ color : #2188E0; }
+a:active	{ color : #2188E0; }
+a:visited	{ color : #0066CC; }
+a:hover		{ text-decoration: underline; color : #FF6600; }
+table tr td	{ border-color: #FF3399; }
+table tr th	{ border-color: #FF3399; background: #FF3399; }
+input, select, textarea				{ border-color: #FF3399; font-family: Comic Sans MS; }
+input:focus, select:focus, textarea:focus	{ border-color: #FF3399; }
+h1
+{
+	font-size: 16pt;
+	color: #FF0066;
+}
+h2
+{
+	font-size: 10pt;
+	color: #FF33FF;
+}
+hr
+{
+	border-top-color: #F778A1;
+}
+#title
+{
+	font-size: 26pt;
+	color: #FF0066;
+}
+#footer
+{
+	border-color: #F778A1;
+}
+.entry
+{
+	border-bottom-color: #F778A1;
+}
+.entryContent
+{
+	background-color: #FFCCCC;
+	border-color: #F778A1;
+}
+.blockTitle
+{
+	font-size: 18pt;
+	color: #FF3399;
+}
+#calendar
+{
+	background-color: #FF99CC;
+}
+#calendar th
+{
+	background-color: #FF3399;
+	border-color: #FF3399;
+}
+#calendar td
+{
+	border-color: #FF3399;
+}
+#shoutbox
+{
+	border-color: #FF3399;
+}
+#postTable tr td .smilies tr td	{ border-color: #FF3399; }
+#postTable tr td .smilies tr th	{ border-color: #FF3399; background-color: #FF3399; }
+.daycell
+{
+	background-color: #FFCCCC;
+}
+.row1
+{
+	background-color: #FFCCCC;
+}
+
+.row2
+{
+	background-color: #FF99CC;
+}

@@ -1,0 +1,217 @@
+/* 
+v_Enhance's AoPS Stylesheet
+Theme Name: Simple3
+Last edited September 23, 2012.
+
+You are free to copy, modify, and distribute whatever part of this you like, preferably not for profit.
+A (CSS) comment of appreciation would be nice though, especially if you copy the whole stylesheet,
+but is not strictly necessary.
+*/
+
+/* Set font */
+body { 
+	font-family: "Trebuchet MS";
+	}
+
+/* This snippet places the custom block near the top of the blog and colors it. */
+div#custom_block_cb53544 {
+	position: absolute;
+	left: 42%;
+	top: 130px;
+	border: thin solid red;
+	background-color: #DDDDDD;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+	font-size:20px;
+	}
+div#custom_block_cb53544:hover {
+	opacity: 1.0;
+	filter:alpha(opacity=100);
+	}
+
+/*Shout Box modification.  This doesn't seem to work now... */ 
+#shout_post { 
+	height:30%;
+	overflow:scroll;
+	background-color: #FFFFFF;
+	}
+#shout_post:focus { 
+	min-height:200%; 
+	height:200%;
+	}
+#shout_post:hover {
+	min-height:200%;
+	height:200%;
+	}
+
+/*Change how the [code]...[/code] environment looks. */
+div.codecontent { 
+	background-color: #FFF7D7; 
+	border: thin solid blue;
+	position: relative;
+	left: 5px;
+	padding:6px;
+	font-family: monospace;
+	}
+
+/*Change bullet list styles */
+ul { 
+	list-style: url(http://www.artofproblemsolving.com/views/aops/imageset/green_bulletpoint.gif);
+	}
+
+/* Modify the navigation box */
+div#navigation_box {
+	margin:7px;
+	background-color: #87CEEB;
+	border-radius: 9px;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	border: 2px solid #48D1CC;
+	width:300px;
+	position:absolute;
+	left: 58%;
+	top: 70px;
+	z-index: 9001;}
+#navigation_box a {
+	color: #000000;
+	}
+#right_navigation_box {
+	display:none;
+	}
+
+/* Mod header */
+div#header{
+	margin:7px;
+	border: 3px solid #B22222;
+	border-radius: 11px;
+	-moz-border-radius: 11px;
+	-webkit-border-radius: 11px;
+	background-color: #FAEBD7;
+	overflow: hidden;
+	}
+
+/* Mod side box */
+div#side { 
+	margin:3px;
+	border: 1px solid #6A5ACD; 
+	border-radius: 11px;
+		-moz-border-radius: 11px;
+		-webkit-border-radius: 11px;
+		-webkit-transition: all 0.7s ease-in-out;
+		-moz-transition: all 0.7s ease-in-out;
+		-o-transition: all 0.7s ease-in-out;
+	width:230px;  
+	background-color: #AFEEEE;
+	}
+
+/* Brighten side box on hover */
+div#side{
+	opacity:0.4;
+	filter:alpha(opacity=40);
+	}
+div#side:hover{
+	opacity:1.0;
+	filter:alpha(opacity=100);
+	}
+
+/*Mod main box*/ 
+div#main {
+	margin:3px;
+	border: 1px solid #2E8B57;
+	border-radius: 11px;
+		moz-border-radius: 11px;
+		-webkit-border-radius: 11px;
+	background-color: #B2FEE1;
+	width:630px;
+	}
+
+/*Wrapper */
+div#wrapper {
+	width: 900px;
+	border: 0px none;
+	background-color: transparent !important;
+	background: none !important;
+	}
+
+/*Delete background image */
+body {
+	background-color:#FFFFFF;
+	background-image: none;
+	}
+
+/*More circles! Round > rectangle*/
+div.entrywrap{ 
+	border-radius: 7px;
+		-moz-border-radius: 7px;
+		-webkit-border-radius: 7px;
+	border: 1px solid #000000;
+	}
+
+/* and for comments too */
+div.commentwrap {
+	border-radius: 7px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px soild #000000;
+	}
+
+/* Enlarge, un-center h1 */
+div#header h1{
+	text-align: left;
+	font-size:30pt;
+	position:relative;
+	top:10px;
+	left:3px;
+	}
+
+/* Align the share to the right */
+.addthis_button {
+	float:right;
+	margin: 0 0 15px 15px;
+	}
+
+/* Hacking comment button */
+a.post-comment, a.post-replies { 
+	font-size:14pt;
+	border-radius: 14px;
+	padding: 2px; 
+		-webkit-transition: all 1s ease-in-out;
+		-moz-transition: all 1s ease-in-out;
+		-o-transition: all 1s ease-in-out; 
+	}
+a.post-comment:hover, a.post-replies:hover {
+	background-color: #D9E0A1;
+	}
+div.efooter {
+	width: 100%;
+	position:relative;
+	top: 14px;
+	right: .7em;
+	}
+
+/* adjust entry so that comments are visible and such */
+div.entrywrap {
+	overflow: visible;
+	padding: 0.7em;
+	}
+
+/*Place a box around actions.  Note that we only want to do this for "comment" links. */
+div.efooter>div.actions {
+	padding: 4px;
+	background-color: #DEDEDE;
+	border-radius: 7px;
+	border: 1px solid #000000;
+	}
+
+/* Same for modactions.  This is only visible to the blog owner */
+div.efooter>div.modactions {
+	position:relative;
+	left: 1.0em;
+	background-color: #DEDEDE;
+	padding: 0.1em;
+	border-radius:7px;
+	border: 1px solid #000000;
+	}
+
+/* black background? Uncomment this. 
+body {background-color:gray;} */

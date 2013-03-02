@@ -1,0 +1,25 @@
+body { 
+background-color: #E8E8E8;
+}
+
+
+a:link, a:visited {
+	color: #2188E0;
+}
+
+
+a.probnum {
+	font-size:14pt;
+	color:darkgreen;
+	border-radius: 14px;
+	padding: 2px; 
+		-webkit-transition: all 1s ease-in-out;
+		-moz-transition: all 1s ease-in-out;
+		-o-transition: all 1s ease-in-out;
+}
+
+a.probnum:hover {
+	background-color: lightblue;
+}
+
+

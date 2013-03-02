@@ -1,0 +1,533 @@
+/* Credits to the Wordpress Piano Theme
+by dragon96, Please do not steal*/
+
+/* hi dragon */
+
+/* Colors: FONT[#B8BABB] LINK[#8EB5C0] 
+PENCIL HOVER: http://i.imgur.com/Nc3DG.png || NO HOVER: http://i.imgur.com/fp1ap.png
+COMMENT PENCIL: http://i.imgur.com/ulkNP.png || COMMENT HOVER: http://i.imgur.com/UoDPr.png */
+
+#main p {
+margin-top: -10px;
+margin-bottom: 30px;
+}
+#main fieldset.fields1 p, #main p.author, #main p#post-new-entry-p {
+margin-bottom: 2px;
+margin-top: 0px;
+}
+#main p a {
+background-image: url(http://i.imgur.com/ulkNP.png);
+background-repeat: no-repeat;
+height: 50px;
+padding-left:110px;
+background-position: center center;
+padding-top: 20px;
+padding-bottom: 20px;
+margin-left:-45px; 
+}
+#main p a:hover {
+background-image: url(http://i.imgur.com/UoDPr.png);
+background-repeat: no-repeat;
+}
+#main p.author a, #main p#post-new-entry-p a {
+background-image: none;
+padding: 0px;
+margin: 0px;
+}
+#main p.author a:hover, #main p#post-new-entry-p a:hover {
+background-image: none;
+}
+input, select, textarea {
+font-family: Helvetica, Arial;
+font-size: 12px;
+border: none;
+}
+h1 {
+margin-bottom: 20px;
+margin-left: 20px;
+color: #CCC;
+font-size: 16px;
+}
+h2 {
+font-size: 14px;
+color: #CCC;
+margin-bottom: 15px;
+}
+h3 {
+color: #CCC;
+}
+a:link, a:visited, span.hidden-label  {
+color: #797F80;
+font-family: Helvetica, Arial;
+text-decoration: none;
+}
+span.hidden-label {
+text-decoration: underline;
+}
+a:active, a:hover {
+color: #83BAC4;
+}
+
+/* Sidestuff */
+
+#user-menu-widget p {
+position: absolute;
+color: #666;
+font-size: 11px;
+left: 50%;
+margin-left: -430px;
+top: 200px;
+}
+#user-menu-widget p.avatar {
+position: relative;
+left: 0px;
+margin-left: auto;
+margin-right: auto;
+top: 0px;
+}
+#about-owner-widget, #stats-widget {
+color: #B8BABB;
+}
+#contrib-widget a, #contrib-widget, #tags-widget a, #tags-widget {
+color: #888;
+text-transform: uppercase;
+font-size: 11px;
+}
+#tags-widget a {
+text-transform: none;
+}
+#contrib-widget, #tags-widget {
+color: #CCC;
+padding-right: 5px;
+}
+#contrib-widget a:hover, #tags-widget a:hover {
+text-decoration: none;
+color: #8EB5C0;
+}
+
+#contrib-widget div.widget-content, 
+#tags-widget div.widget-content{
+margin-left: 10px;
+}
+
+div.archive-row a {
+margin-left: 10px;
+font-size: 11px;
+color: #CCC;
+text-transform: uppercase;
+}
+div.archive-row a:hover {
+color: #8EB5C0;
+text-decoration: none;
+}
+#archive-widget img {
+margin-right: 3px;
+}
+#archive-widget span {
+color: #888;
+font-size: 11px;
+font-weight: normal;
+text-transform: uppercase;
+margin-left: 10px;
+}
+.widget {
+margin-top: 10px;
+margin-bottom: 10px;
+}
+#message-box {
+margin-right: auto;
+margin-left: auto;
+}
+#shout_post textarea#message {
+width: 284px;
+}
+#shout_post {
+color: #B8BABB;
+font-size: 11px;
+text-transform: uppercase;
+}
+#shout_post a {
+color: #B8BABB;
+}
+fieldset {
+border: none;
+}
+/* Cool stuff */
+#blog_searchform input[type="text"] {
+position: absolute;
+padding-top: 0px;
+top: 185px;
+height: 30px;
+width: 151px;
+background-image: url(http://s2.wp.com/wp-content/themes/pub/piano-black/img/search-area.gif);
+background-color: transparent;
+background-repeat: no-repeat;
+color: #B8BABB;
+left: 50%;
+padding-left: 30px;
+margin-left: 280px;
+}
+#blog_searchform input[type="submit"] {
+position: absolute;
+text-indent: -999px;
+width: 27px;
+height: 29px;
+background-image: url(http://s2.wp.com/wp-content/themes/pub/piano-black/img/search-button.gif?m=1352062105g);
+background-repeat: no-repeat;
+border-radius: 3px;
+background-position: right center;
+top: 185px;
+left: 50%;
+margin-left: 430px;
+}
+
+div.widget-title {
+font-size: 12px;
+text-transform: uppercase;
+color: #CCC;
+}
+
+/* Row1, Row2 */
+div.row1, div.row2, li.row1, li.row2, .row1, .row2 {
+border: 1px solid #333;
+padding: 5px;
+margin-left: 20px;
+margin-right: 20px;
+width: 92%;
+color: #B8BABB;
+padding-top: 10px;
+}
+
+div.row1, li.row1, .row1 {
+background-color: #000;
+}
+div.row2, li.row2, .row2 {
+background-color: #292929;
+border: 1px solid #494949;
+}
+div.row2 .cfooter, li.row2 .cfooter, div.row2 .cfooter a, li.row2 .cfooter a, .row1, .row2 {
+color: #757676;
+}
+li.row1, li.row2 {
+margin: 7px;
+margin-left: 0px;
+margin-right: 0px;
+text-transform: none;
+font-size: 12px;
+}
+li.row1 a, li.row2 a {
+font-weight: bold;
+text-transform: none;
+color: #757676;
+}
+.row3 {
+color: #B8BABB;
+}
+
+/* Entries */
+
+div.comment {
+border: none;
+margin-top: 0em;
+}
+div.efooter {
+background-color: black;
+height: 20px;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+margin-top: 30px;
+margin-bottom: 10px;
+padding: 10px;
+padding-bottom: 15px;
+}
+
+div.actions ul li a, div.modactions ul li a {
+text-decoration: none;
+}
+
+div.entry h2 img, div.cfooter img {
+display: none;
+}
+
+div.entry {
+border: none;
+margin-top: 5px;
+margin-bottom: 5px;
+padding-left: 0px;
+}
+
+div.entrywrap {
+background-color: transparent; 
+color: #B8BABB;
+font-size: 12px;
+font-family: Helvetica;
+border: none;
+padding-left: 0px;
+margin-left: 0px;
+}
+
+div.entry h1 a {
+color: #CCC;
+font-size: 16px;
+}
+div.entry h1 a:hover {
+color: #CCC;
+}
+
+div.entry h2, div.entry h2 a, div.cfooter, div.cfooter a, p.shout_footer, p.shout_footer a {
+color: #666;
+font-size: 11px;
+line-height: 13px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+div.cfooter, div.cfooter a {
+margin-bottom: 0px;
+}
+
+/* Fun stuff */
+
+.thumbnail, div.entry .message, div.entry h1, h2, div.post-tags, h3, #postform, dl.file, td.row1, td.row2, .addthis_button {
+margin-left: 20px;
+}
+div.post-tags {
+margin-top: 10px;
+margin-bottom: 10px;
+}
+div.total-posts {
+position: relative;
+left: 50%;
+margin-top: 50px;
+color: #B8BABB;
+}
+
+/* ------------------------------------------------------------------------------------*/
+
+#content {
+margin-top: 0px;
+width: 960px;
+margin-left: auto;
+margin-right: auto;
+background-image: url( http://img269.imageshack.us/img269/5559/contentbgs.png );
+background-repeat: repeat;
+margin-bottom: 0px;
+padding-bottom: 20px;
+}
+
+#main {
+width: 64%;
+padding-left: 0px;
+margin-top: 50px;
+}
+
+#side {
+width:33%;
+background-image: url( http://i.imgur.com/TtFaY.png );
+background-repeat: repeat;
+border-left: 1px solid #444;
+border-bottom: 1px solid #444;
+height: 100%;
+}
+
+#footer {
+height: 150px;
+background-image: url(http://i.imgur.com/xnE0F.png);
+width: 960px;
+margin-left: auto;
+margin-right: auto;
+background-repeat: no-repeat;
+margin-bottom: 100px;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+body {
+background-image: url(http://s2.wp.com/wp-content/themes/pub/piano-black/img/body-bg.gif);
+background-repeat: repeat;
+font-family: Helvetica, Arial;
+}
+
+#wrapper {
+padding-top: 100px;
+background-color: transparent; 
+width: 99%;
+background-image: url(http://s2.wp.com/wp-content/themes/pub/piano-black/img/page-bg.png);
+background-repeat: no-repeat;
+background-position: center top;
+border: none;
+}
+
+#header {
+border: none;
+background-color: black;
+height: 150px;
+width: 960px;
+color: white;
+font-family: Helvetica;
+font-size: 24px;
+padding-top: auto;
+padding-bottom: auto;
+border-top-right-radius: 7px;
+border-top-left-radius: 7px;
+margin-left: auto;
+margin-right: auto;
+}
+
+div#header h1 {
+margin-top: 40px;
+margin-left: 30px;
+padding-top: 20px;
+padding-left: 20px;
+font-size: 16pt;
+color: #FFF;
+text-align: left;
+}
+
+#post-new-entry-p img {
+display: none;
+}
+#post-new-entry-p {
+font-size: 16px;
+position: absolute;
+top: 173px;
+left: 50%;
+margin-left: 70px;
+background-image: url(http://i.imgur.com/fp1ap.png);
+height: 50px;
+background-repeat: no-repeat;
+padding-top: 18px;
+padding-left: 55px;
+}
+#post-new-entry-p a {
+color: #666;
+}
+#post-new-entry-p a:hover {
+color: #8EB5C0;
+}
+#post-new-entry-p:hover {
+background-image: url(http://i.imgur.com/Nc3DG.png);
+background-repeat: no-repeat;
+}
+
+/*-------------------------------------------------------------------*/
+
+/* Navbar */
+
+#navigation_box a {
+color: white;
+font-family: Tahoma, Helvetica, Arial;
+}
+#navigation_box a:hover {
+color: #8EB5C0;
+text-decoration: none;
+}
+#navigation_box {
+border: none;
+padding-top: auto;
+padding-bottom: auto;
+background-color: #222;
+padding-left: 5px;
+padding-right: 5px;
+/* Questionable 
+height: 20px;
+top: 230px;
+background-color: black;*/
+}
+#left_navigation_box {
+margin-left: 10px;
+}
+#left_navigation_box, #left_navigation_box a, #right_navigation_box a {
+color: #AAA;
+font-size: 11px;
+font-family: Helvetica, Arial;
+}
+#right_navigation_box {
+width: 100px;
+margin-right: 10px;
+}
+#right_navigation_box a {
+color: #777;
+}
+
+/* Quote + Code + Dumb stuff */
+
+div.quotetitle, div.codetitle {
+background-color: #292929;
+border: 1px solid #494949;
+border-bottom: none;
+opacity: 0.5;
+color: white;
+padding: 5px;
+padding-bottom: 2px;
+margin-top: 10px;
+}
+div.quotecontent, div.codecontent {
+background-color: #292929;
+border: 1px solid #494949;
+border-top: none;
+opacity: 0.5;
+color: white;
+padding: 5px;
+padding-top: 2px;
+margin-bottom: 10px;
+}
+div.codecontent {
+font-family: courier;
+}
+dt a {
+color: #AAA;
+}
+fieldset.fields1 {
+color: #B8BABB;
+}
+input[type="reset"], input[type="button"], input[type="submit"] {
+padding-top: 2px;
+padding-bottom: 2px;
+background-color: black;
+color: #B8BABB;
+border-radius: 1px;
+}
+
+/* Postform Geometry */
+#smiley-box, #options-panel, #tabs {
+background-color: #292929;
+border: 1px solid #494949;
+padding: 5px;
+margin-bottom: 20px;
+margin-top: 20px;
+margin-left: auto;
+margin-right: auto;
+}
+#options-panel, #tabs {
+margin-left: 10px;
+}
+#smiley-box {
+margin-right: -10px;
+}
+#smiley-box hr {
+display: none;
+}
+#postform {
+position: relative;
+margin-left: 174px;
+margin-right: -167px;
+padding-top: 5px;
+}
+#postform h3 {
+margin-left: -40px;
+}
+#postform input[type="button"] {
+margin: 1px;
+margin-bottom: 7px;
+}
+#at15ptc {
+color: black;
+}
+#blog-errors {
+background-color: transparent;
+color: white;
+border: none;
+position: absolute;
+left: 50%;
+margin-left: -380px;
+}

@@ -1,0 +1,376 @@
+input, select, textarea {
+	border				: 1px solid #d0d0d0;
+    font-family         : Verdana,Arial,Helvetica,sans-serif;
+    font-size           : 13px;
+}
+
+button, input[type="reset"], input[type="button"], input[type="submit"] {
+	padding				: 0 6px;
+	text-align			: center;
+	white-space			: pre;
+}
+.deleted {
+	background-color: #A19CA6;
+}
+
+.foe {
+	background-color: #FF6600;
+}
+
+.num_replies {
+	float: right;
+}
+
+.no_blogs {
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+#replies {
+	text-align: center;
+	margin-top: 15px;
+}
+
+/**
+* Left menu
+*/
+#left_menu {
+	width: 240px;
+	vertical-align: top;
+}
+
+
+#blog_searchform {
+	color: #FFFFFF;
+	margin-top: 5px;
+	white-space: nowrap;
+}
+
+/**
+ * Standard CSS
+ */
+
+body {
+	font-size			: 8pt;
+	font-family			: Arial;
+	text-align			: center;
+	margin				: 0;
+	padding				: 0;
+	display				: block;
+}
+
+textarea {
+    padding             : 5px;
+    line-height         : 1.4em;
+}
+
+.inputbox {
+	width				: 100%;
+}
+
+a:hover {
+	color				: #ff6600;
+	text-decoration		: underline;
+}
+
+a:visited {
+	color				: #0066cc;
+	text-decoration		: none;
+}
+
+a:link {
+	color				: #2188e0;
+	text-decoration		: none;
+}
+
+h1 {
+	display				: block;
+	font-weight			: normal;
+	letter-spacing		: 1px;
+	margin				: 0;
+	font-size			: 16pt;
+}
+
+h2 {
+	color				: #0066cc;
+	font-size			: 10pt;
+	font-weight			: normal;
+	margin				: 0;
+}
+
+img {
+	border				: 0 none;
+}
+
+
+#wrapper {
+	background			: white url(/Forum/blog/styles/hyperion/images/bg.png) repeat-y scroll right center;
+	border-bottom		: 1px solid #bcbcbc;
+	border-left			: 1px solid #bcbcbc;
+	border-right		: 1px solid #bcbcbc;
+	margin-left			: auto;
+	margin-right	    : auto;
+	padding				: 0 2px 2px;
+	text-align			: center;
+	width				: 800px;
+}
+
+#header {
+	background			: #efefef none repeat scroll 0 0;
+	clear				: both;
+	font-family			: Tahoma;
+	font-size			: 5em;
+	line-height			: 1.5em;
+	overflow			: auto;
+	vertical-align		: middle;
+	white-space			: nowrap;
+	border-top			: 5px solid #cccccc;
+	border-bottom		: 5px solid #cccccc;
+}
+
+#main {
+	width				: 530px;
+	padding				: 5px;
+	float				: left;
+}
+
+div#header h1 {
+	text-align			: center;
+}
+
+#content {
+	text-align			: left;
+}
+
+
+div.entry {
+	border-bottom		: 1px dashed #cccccc;
+	margin-top			: 1em;
+	overflow			: hidden;
+	padding-bottom		: 1em;
+}
+
+div.entry h1 {
+	padding				: 0.1em;
+}
+
+div .entrywrap, div .entrywrap-hover {
+	background-color	: #dedede;
+	border				: 1px solid black;
+	margin				: 0.5em;
+	overflow			: auto;
+	padding				: 0.5em;
+	*height				: 99%;
+}
+
+#navigation_box {
+	background-color	: #006699;
+	border-bottom		: 1px dashed #fff;
+	padding				: 2px 2px 3px;
+}
+
+#navigation_box a {
+	color				: #fff;
+}
+
+#left_navigation_box {
+	float				: left;
+	text-align			: left;
+	width				: auto;
+}
+
+#right_navigation_box {
+	float				: right;
+	text-align			: right;
+	width				: auto;
+}
+
+div.comment {
+	clear				: both;
+}
+
+div.actions {
+	float				: left;
+	font-size			: 10px;
+	padding				: .5em;
+	text-align			: left;
+}
+
+div.modactions {
+	float				: right;
+	font-size			: 10px;
+	padding				: 0.5em 0 0;
+	text-align			: right;
+}
+
+div.cfooter div.actions {
+	padding				: 0;
+}
+
+div.modactions ul,
+div.actions ul {
+	border				: medium none;
+	display				: inline;
+	list-style-image	: none;
+	list-style-position	: outside;
+	list-style-type		: square;
+	margin-left			: 0;
+	padding-left		: 0;
+}
+
+div.modactions ul li,
+div.actions ul li {
+	border				: medium none;
+	display				: inline;
+	margin-left			: 0;
+	margin-top			: 0.2em;
+	padding				: 0.2em 0.5em 0;
+}
+
+div.modactions ul li a,
+div.actions ul li a {
+	display				: inline;
+	text-decoration		: underline;
+}
+
+div.comment {
+	border-bottom		: 1px solid #ccc;
+	margin-top			: 1em;
+	overflow			: auto;
+	padding-bottom		: 1em;
+}
+
+div.commentwrap {
+	height				: auto;
+	overflow			: auto;
+	padding				: 0.5em;
+	width				: 97%;
+	margin				: 0 auto 10px auto;
+}
+
+input.helpline {
+	display				: none;
+}
+
+.clear {
+	clear				: both;
+}
+
+fieldset.admin dt {
+	border-right		: 1px solid #ccc;
+	float				: left;
+	padding-top			: 3px;
+	text-align			: left;
+	width				: 45%;
+
+}
+
+fieldset.admin dd {
+	border				: none;
+	margin				: 0 0 0 45%;
+	padding				: 0 0 0 5px;
+	vertical-align		: top;
+}
+
+#side {
+	float				: right;
+	line-height			: 1.4em;
+	margin				: 0;
+	padding				: 5px;
+	width				: 250px;
+}
+
+#side .block {
+	clear				: both;
+	padding				: 1em 0;
+}
+
+#side .widget {
+	margin-bottom		: 2em;
+}
+
+.widget-title {
+	font-size			: 13px;
+	font-weight			: bold;
+	padding-bottom		: 2px;
+}
+
+fieldset {
+	border				: 2px groove threedface;
+	display				: block;
+	margin				: 0 2px;
+	padding				: 0.35em 0.625em 0.75em;
+}
+
+fieldset ul {
+	list-style-image	: none;
+	list-style-position	: outside;
+	list-style-type		: none;
+	margin				: 0;
+	padding				: 0;
+}
+
+.row1 {
+	background-color	: #f9f9f9;
+}
+
+.row2 {
+	background-color	: #f0f0f0;
+}
+
+fieldset.submit-buttons {
+	text-align			: center;
+}
+
+div.quotetitle, div.quotecontent {
+	background-color	: #ebeadd;
+	border-right 		: 1px solid #dbdbce;
+	border-left  		: 1px solid #dbdbce;
+}
+
+div.quotecontent {
+	border-bottom		: 1px solid #dbdbce;
+}
+
+div.quotetitle {
+	border-top			: 1px solid #dbdbce;
+	font-weight			: bold;
+}
+
+ul.cats li {
+	font-size			: 8pt;
+	line-height			: 24px;
+}
+
+.archive-row {
+    padding-left        : 15px;
+    padding-bottom      : 2px;
+}
+img.latexcenter {
+	display				: block;
+	margin				: auto;
+	text-align			: center;
+}
+.hidden-label {
+    color               : blue;
+    text-decoration     : underline;
+    cursor              : pointer;
+}
+#blog-errors {
+	margin : 1em;
+	border: 2px solid #800;
+	background-color: #eee;
+	font-size			: 16px;
+
+}
+
+div.post-tags {
+	margin: 5px 0;
+	font-weight: bold;
+}
+
+a:link.post-tag, a:visited.post-tag {
+	font-weight: normal;
+}
+

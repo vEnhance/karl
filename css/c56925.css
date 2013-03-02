@@ -1,0 +1,152 @@
+/*
+Happy Theme v 1.1 - Please do not plagiarize
+2010 Copyright DG Kim
+Designed for AoPS user blogs
+*/
+
+/* body and entries */
+body{
+background-color: #f9d2ff;
+color: #000000;
+background-image: url('http://www.cyneer.com/dojo_styles/happy/bg.png');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: top right;
+}
+
+#wrapper{
+background-color: #fbe8fd;
+border-left: #a73bbe 5px solid;
+border-top: none;
+border-bottom: none;
+border-right: #a73bbe 5px solid;
+background-image: none;
+width: 1000px;
+float: left;
+margin-left: 50px;
+}
+
+#content{
+margin-left: 30px;
+}
+
+div.entrywrap{
+background-color: #f9d2ff;
+}
+
+div.entrywrap-hover{
+background-color: #f9d2ff;
+}
+
+.row1, .row2{
+background-color: transparent;
+}
+
+/* header */
+#header{
+background-color: transparent;
+border: none;
+}
+
+/* side */
+#side{
+background-color: transparent;
+margin-right: 30px;
+}
+
+#side fieldset{
+border: none;
+}
+
+li.row1, li.row2{
+background-color: transparent;
+}
+
+/* navigation box */
+#navigation_box{
+background-color: transparent;
+position: absolute;
+width: 860px;
+top: 100px;
+left: 50%;
+margin-left: -920px;
+padding: 0;
+border: none;
+color: #000000;
+z-index: 10;
+}
+#left_navigation_box{
+position: absolute;
+top: -20px;
+right: -160px;
+margin: 0;
+text-align: left;
+width: 600px;
+}
+#right_navigation_box{
+position: absolute;
+top: -20px;
+right: -200px;
+margin: 0;
+text-align: right;
+width: 200px;
+}
+#left_navigation_box a, #right_navigation_box a{
+color: #000000;
+text-decoration: none;
+}
+#left_navigation_box a:visited, #right_navigation_box a:visited{
+color: #000000;
+text-decoration: none;
+}
+#left_navigation_box a:hover, #right_navigation_box a:hover{
+color: #000000;
+text-decoration: underline;
+}
+
+/* footer and various coloring */
+div#footer{
+display: none;
+}
+
+div.quotetitle{
+border-top-color: #dbdbce;
+border-top-width: 1px;
+border-top-style: solid;
+padding: 5px;
+width: 90%;
+}
+div.quotecontent{
+border-bottom-color: #dbdbce;
+border-bottom-width: 1px;
+border-bottom-style: solid;
+padding: 5px;
+width: 90%;
+}
+div.codetitle{
+border-top-color: #dbdbce;
+border-top-width: 1px;
+border-top-style: solid;
+padding: 5px;
+width: 90%;
+}
+div.codecontent{
+border-bottom-color: #dbdbce;
+border-bottom-width: 1px;
+border-bottom-style: solid;
+padding: 5px;
+width: 90%;
+font-family: Courier New, Courier New;
+}
+div.codetitle, div.codecontent {
+background-color: #ebeadd;
+border-right-color: #dbdbce;
+border-right-width: 1px;
+border-right-style: solid;
+border-left-color: #dbdbce;
+border-left-width: 1px;
+border-left-style: solid;
+}
+a:link {color: #000000; text-decoration: none;}
+a:visited {color: #000000; text-decoration: none;}
+a:hover {color: #000000; text-decoration: underline;}
