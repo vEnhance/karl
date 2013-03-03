@@ -1,7 +1,0 @@
-AuthName "Restricted Area" 
-AuthType Basic 
-AuthUserFile /www/99k.org/m/a/t/math-cms/htdocs/.htpasswd 
-AuthGroupFile /dev/null 
-<Files *.php>
-require valid-user
-</Files>
