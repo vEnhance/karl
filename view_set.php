@@ -83,7 +83,7 @@ echo "</h2>";
 		<a href="javascript:toggleHide('edit_contest_info');" class="hider">Edit</a>
 		<div id="edit_contest_info" class="hidden">
 			<form action="view_set.php?cid=<? echo $CID; ?>" method="post">
-			<? do_print_textarea("info", "Information", $OK_CONTESTS[$CID]['info']); ?>
+			<? do_print_textarea("info", "Information", "128px", $OK_CONTESTS[$CID]['info']); ?>
 			<input type="submit" name="update_info" value="Update">
 			</form>
 		</div>
