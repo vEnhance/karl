@@ -114,7 +114,7 @@ echo "</h2>";
 		}
 		echo "</td>" . "\n";
 		echo "<td style=\"font-size:10pt;\">";
-		echo "<span class=\"set_author_name\">({$prob_row['author']})</span> " . "<span class=\"math_content\">{$prob_row['statement']}</span>" . "\n";
+		echo "<a href=\"view_problem.php?id=$id\" class=\"set_author_name\">({$prob_row['author']})</a> " . "<span class=\"math_content\">{$prob_row['statement']}</span>" . "\n";
 		echo "<br>";
 		echo "<div class=\"set_hashtag\">" . "\n";
 			echo "<span style=\"float:left;\">" . "\n";
