@@ -1,3 +1,4 @@
 .gitignore
 .git-ftp-ignore
 README
+internal/secret.php.EXAMPLE
