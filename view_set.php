@@ -190,6 +190,15 @@ echo "</h2>";
 <span class="edit_set_hidden">
 	<div class="info">
 	Use this form to re-order problems and/or move them to a different contest. <br> 
+	<br>
+	<script>
+	function checkAll(value) {
+		$('[name="need_move[]"]').each(function() { this.checked = value; });
+	}
+	</script>
+	<a href="javascript:checkAll(true)">Check All</a> :: <a href="javascript:checkAll(false)">Uncheck All</a>
+	<br>
+
 	<span class="form_input_name">Move to:</span> <? do_print_selector("target_cid", $CID); ?>
 	<input type="submit" name="submit" value="Make Changes"><br>
 	<input type="checkbox" name="please_sort_by_difficulty" value="1">Re-sort by difficulty<br>
