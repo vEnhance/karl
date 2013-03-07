@@ -67,11 +67,11 @@ while ($prob_row = mysql_fetch_array($probs)) {
 	<a href="view_set.php?cid=<? echo $CID; ?>">
 		<? echo $contest_name; ?>
 	</a>
+	<?  if ((isset($DIFFICULTY)) && ($DIFFICULTY !== "")) { echo "(d=$DIFFICULTY)"; } ?>
 </h1>
 
 <?
 echo "<h2><a href=\"javascript:toggleEditSetHideAll()\";>This set contains <strong>$num_probs</strong> problems.</a>";
-if ((isset($DIFFICULTY)) && ($DIFFICULTY !== "")) { echo "  Difficulty set at d=$DIFFICULTY."; } 
 echo "</h2>";
 ?>
 
