@@ -1,0 +1,4 @@
+.gitignore
+.git-ftp-ignore
+knobs/*
+README
