@@ -19,34 +19,37 @@ if (isset($_REQUEST['submit']) || !isset($_REQUEST['ask'])) {
 		}
 	}
 	$ordered_soln = isset($_REQUEST['include_solution']);
+	$ordered_preamble = isset($_REQUEST['include_preamble']); // default value
 
 	$query = "SELECT * FROM Problems WHERE cid=$CID ORDER BY zindex";
 	$res = mysql_query($query);
 	$contest_name = $OK_CONTESTS[$CID]['name'];
 
-	echo '\documentclass[11pt]{article}' . "\n";
-	echo '\usepackage{amsmath,amsthm,amssymb}' . "\n";
-	echo '\usepackage[margin=1in]{geometry}' . "\n";
+	if ($ordered_preamble) {
+		echo '\documentclass[11pt]{article}' . "\n";
+		echo '\usepackage{amsmath,amsthm,amssymb}' . "\n";
+		echo '\usepackage[margin=1in]{geometry}' . "\n";
 
-	foreach ($menu as $entree => $ordered) {
-		if ($ordered) {
-			echo "\\newcommand{\\set$entree}[1]{}\n";
+		foreach ($menu as $entree => $ordered) {
+			if ($ordered) {
+				echo "\\newcommand{\\set$entree}[1]{}\n";
+			}
 		}
-	}
-	if ($ordered_soln) {
-		echo "\\newenvironment{soln}{\\begin{proof}[Solution]}{\\end{proof}}\n";
-	}
-	echo "\n";
+		if ($ordered_soln) {
+			echo "\\newenvironment{soln}{\\begin{proof}[Solution]}{\\end{proof}}\n";
+		}
+		echo "\n";
 
-	echo '\begin{document}' . "\n";
-	echo '\title{' . $contest_name . '}' . "\n";
-	echo '\author{KARL}' . "\n";
-	echo '\date{\today}' . "\n";
-	echo '\maketitle' . "\n";
+		echo '\begin{document}' . "\n";
+		echo '\title{' . $contest_name . '}' . "\n";
+		echo '\author{KARL}' . "\n";
+		echo '\date{\today}' . "\n";
+		echo '\maketitle' . "\n";
 
-	echo "\n";
-	echo '\begin{enumerate}' . "\n";
-	echo "\n";
+		echo "\n";
+		echo '\begin{enumerate}' . "\n";
+		echo "\n";
+	}
 
 	while ($prob_row = mysql_fetch_array($res)) {
 		// echo "% d={$prob_row['difficulty']}, {$prob_row['votes']} votes\n";
@@ -66,7 +69,9 @@ if (isset($_REQUEST['submit']) || !isset($_REQUEST['ask'])) {
 		}
 		echo "\n";
 	}	
-	echo '\end{enumerate}' . "\n" . '\end{document}';
+	if ($ordered_preamble) {
+		echo '\end{enumerate}' . "\n" . '\end{document}';
+	}
 
 	exit;
 }
@@ -93,6 +98,7 @@ include './internal/buttons.php';
 			<input name="include_topic" type="checkbox" value="1"> Problem names <br>
 			<input name="include_votes" type="checkbox" value="1"> Votes <br>
 			<input name="include_solution" type="checkbox" value="1"> Solution <br>
+			<input name="include_solution" type="checkbox" value="1"> TeX Preamble <br>
 			<input name="submit" type="submit" value="Order">
 		</form>
 	</div>
