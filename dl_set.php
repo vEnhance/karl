@@ -98,7 +98,7 @@ include './internal/buttons.php';
 			<input name="include_topic" type="checkbox" value="1"> Problem names <br>
 			<input name="include_votes" type="checkbox" value="1"> Votes <br>
 			<input name="include_solution" type="checkbox" value="1"> Solution <br>
-			<input name="include_solution" type="checkbox" value="1"> TeX Preamble <br>
+			<input name="include_preamble" type="checkbox" value="1"> TeX Preamble <br>
 			<input name="submit" type="submit" value="Order">
 		</form>
 	</div>
