@@ -7,7 +7,7 @@ require './internal/common.php';
 if (isset($_REQUEST['submit']) || !isset($_REQUEST['ask'])) {
 	header("Content-Type: text/plain");
 
-	$menu = array('author' => 1, 'answer' => 1, 'topic' => 0, 'difficulty' => 0, 'votes' => 0);
+	$menu = array('author' => 1, 'answer' => 1, 'title' => 0, 'difficulty' => 0, 'votes' => 0);
 	if (isset($_REQUEST['submit'])) {
 		foreach ($menu as $entree => $default) {
 			if (isset($_REQUEST['include_' . $entree])) {
@@ -95,7 +95,7 @@ include './internal/buttons.php';
 			<input name="include_author" type="checkbox" value="1"> Problem author <br>
 			<input name="include_answer" type="checkbox" value="1"> Numerical answer <br>
 			<input name="include_difficulty" type="checkbox" value="1"> Difficulty <br>
-			<input name="include_topic" type="checkbox" value="1"> Problem names <br>
+			<input name="include_title" type="checkbox" value="1"> Problem names <br>
 			<input name="include_votes" type="checkbox" value="1"> Votes <br>
 			<input name="include_solution" type="checkbox" value="1"> Solution <br>
 			<input name="include_preamble" type="checkbox" value="1"> TeX Preamble <br>

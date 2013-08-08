@@ -68,7 +68,7 @@ function do_print_recent($var_name, $header_name, $search_limit=7) {
 	if (!isset($_SESSION["recent_$var_name"]) || (isset($_REQUEST["reload_recent_$var_name"]))) {
 		global $OK_CONTESTS;
 		$OK_contests_imploded_list = implode(",", array_keys($OK_CONTESTS));
-		$query = "SELECT cid,difficulty,id,topic,zindex,$var_name FROM Problems WHERE cid IN ($OK_contests_imploded_list) ORDER BY $var_name DESC LIMIT $search_limit";
+		$query = "SELECT cid,difficulty,id,title,zindex,$var_name FROM Problems WHERE cid IN ($OK_contests_imploded_list) ORDER BY $var_name DESC LIMIT $search_limit";
 		$recent_comment_result = mysql_query($query);
 		$res = "<table class=\"recent_problems\">" . "\n";
 		$res .= "<colgroup>" . "\n";
@@ -94,7 +94,7 @@ function do_print_recent($var_name, $header_name, $search_limit=7) {
 				$string_adj = "on";
 			}
 			$res .= "<tr><td style=\"text-align:right;\" valign=\"top\"><a href=\"view_set.php?cid={$recent_row['cid']}&difficulty={$recent_row['difficulty']}\">{$recent_row['zindex']}.</a></td>
-				<td><a href=\"view_problem.php?id={$recent_row['id']}\">{$recent_row['topic']}</a></td><td valign=\"top\">$string_time</td></tr>" . "\n";
+				<td><a href=\"view_problem.php?id={$recent_row['id']}\">{$recent_row['title']}</a></td><td valign=\"top\">$string_time</td></tr>" . "\n";
 		}
 		$res .= "</tbody></table>" . "\n";
 		$_SESSION["recent_$var_name"] = $res;

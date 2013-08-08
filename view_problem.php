@@ -24,7 +24,7 @@ include './internal/buttons.php';
 <div class="entry">
 	<h1>
 		<a href="view_set.php?cid=<? echo $CID; ?>"><? echo $PROB_ROW['zindex']; ?>.</a> 
-		<a href="view_set.php?cid=<? echo $CID; ?>&difficulty=<? echo $DIFFICULTY; ?>"><? echo $PROB_ROW['topic']; ?></a>
+		<a href="view_set.php?cid=<? echo $CID; ?>&difficulty=<? echo $DIFFICULTY; ?>"><? echo $PROB_ROW['title']; ?></a>
 	</h1>
 
 	<h2>by <strong><? echo $PROB_ROW['author']; ?></strong>, <? echo date('F j, Y, g:i:s a', $submit_day); ?></h2>

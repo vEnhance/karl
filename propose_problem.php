@@ -40,7 +40,7 @@ do if (isset($_POST['submit'])) {
 		'solution' => true,
 		'comments' => true,
 		'comments_spoiler' => true,
-		'topic' => true,
+		'title' => true,
 		'difficulty' => false,
 		'cid' => false);
 	foreach($to_change as $key => $is_string) {
@@ -136,7 +136,7 @@ else {
 			echo "</table>" . "\n";
 		}
 		echo '<table><tbody><tr>';
-		do_print_text("topic", "Title");
+		do_print_text("title", "Title");
 		echo '</tr></tbody></table>';
 		do_print_textarea("statement", "Statement");
 		echo "<table><tbody>" . "\n";

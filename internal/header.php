@@ -86,7 +86,7 @@ function line_count($s) {
 
 // Try to guess title
 if ($ID) {
-	$TITLE = $TITLE_HEAD . $PROB_ROW['topic'] . $TITLE_TAIL;
+	$TITLE = $TITLE_HEAD . $PROB_ROW['title'] . $TITLE_TAIL;
 }
 else if ($CID) {
 	$TITLE = $TITLE_HEAD . $OK_CONTESTS[$CID]['name'] . $TITLE_TAIL;
