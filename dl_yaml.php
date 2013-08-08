@@ -14,9 +14,11 @@ $appetizers = array('author', 'answer', 'title', 'difficulty', 'votes');
 $courses = array('statement', 'solution', 'comments');
 while ($prob_row = mysql_fetch_array($res)) {
 	foreach ($appetizers as $entree)
-		echo "$entree: " . $prob_row[$entree] . "\n";
+		if ($prob_row[$entree])
+			echo "$entree: " . $prob_row[$entree] . "\n";
 	foreach ($courses as $entree)
-		echo "$entree: |\n  " . addSpaces($prob_row[$entree]) . "\n";
+		if ($prob_row[$entree])
+			echo "$entree: |\n  " . addSpaces($prob_row[$entree]) . "\n";
 	echo '---' . "\n";
 }	
 
