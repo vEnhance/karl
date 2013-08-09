@@ -28,6 +28,7 @@ if (isset($_REQUEST['submit']) || !isset($_REQUEST['ask'])) {
 	if ($ordered_preamble) {
 		echo '\documentclass[11pt]{article}' . "\n";
 		echo '\usepackage{amsmath,amsthm,amssymb}' . "\n";
+		echo '\usepackage{asymptote}' . "\n";
 		echo '\usepackage[margin=1in]{geometry}' . "\n";
 
 		foreach ($menu as $entree => $ordered) {
