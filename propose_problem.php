@@ -45,7 +45,7 @@ do if (isset($_POST['submit'])) {
 		'cid' => false);
 	foreach($to_change as $key => $is_string) {
 		if (!isset($_POST[$key])) { continue; }
-		$val = mysqli_real_escape_string($_POST[$key]);
+		$val = mysql_real_escape_string($_POST[$key]);
 
 		// Handle blank values and such
 		if ((!$is_string) && (!$val)) {
