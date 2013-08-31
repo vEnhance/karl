@@ -2,6 +2,14 @@
 date_default_timezone_set('America/Los_Angeles');
 require 'secret.php';
 
+if (get_magic_quotes_gpc()) {
+	$_GET = stripslashesFromArray($_GET);
+	$_POST = stripslashesFromArray($_POST);
+	$_COOKIE = stripslashesFromArray($_COOKIE);
+	$_REQUEST = stripslashesFromArray($_REQUEST);
+}
+
+
 function computeHash($user, $pass) {
 	$PASSWORD_SALT = constant("PASSWORD_SALT");
 	$hash_sum = sha1("user=" . $user . ", pass=" . $PASSWORD_SALT . $pass);
