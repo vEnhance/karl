@@ -2,6 +2,13 @@
 date_default_timezone_set('America/Los_Angeles');
 require 'secret.php';
 
+function stripslashesFromArray($value) {
+    $value = is_array($value) ?
+                array_map('stripslashesFromArray', $value) :
+                stripslashes($value);
+
+    return $value;
+}
 if (get_magic_quotes_gpc()) {
 	$_GET = stripslashesFromArray($_GET);
 	$_POST = stripslashesFromArray($_POST);
