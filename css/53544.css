@@ -5,7 +5,7 @@ body
 	background-repeat: repeat;
 	background-position: center center;
 	background-color: #5368C1;
-	font-family: Comic Sans MS;
+	font-family: Trebuchet MS;
 	font-size: 10pt;
 	color: #000000;
 }
@@ -15,7 +15,7 @@ a:visited	{ color : #0066CC; }
 a:hover		{ text-decoration: underline; color : #FF6600; }
 table tr td	{ border-color: #CCCCCC; }
 table tr th	{ border-color: #CCCCCC; background: #CCCCCC; }
-input, select, textarea				{ border-color: #CCCCCC; font-family: Comic Sans MS; }
+input, select, textarea				{ border-color: #CCCCCC; font-family: Trebuchet MS; }
 input:focus, select:focus, textarea:focus	{ border-color: #CCCCCC; }
 h1
 {
