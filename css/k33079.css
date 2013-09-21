@@ -44,5 +44,5 @@ a.probnum {
 }
 
 .MathJax .noError {
-	color: #B8BABB;
+	color: #B8BABB !important;
 }
