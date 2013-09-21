@@ -43,3 +43,6 @@ a.probnum {
 	font-size:11pt;
 }
 
+.MathJax .noError {
+	color: #B8BABB;
+}
