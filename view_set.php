@@ -77,17 +77,14 @@ echo "</h2>";
 
 <div class="entrywrap">
 	<div class="message">
-	<a href="javascript:toggleHide('contest_info');" class="hider">Contest Description</a>
-	<div id="contest_info" class="hidden">
 		<? if ($OK_CONTESTS[$CID]['info']) echo "<div class=\"info math_content\">{$OK_CONTESTS[$CID]['info']}</div>"; ?>
-		<a href="javascript:toggleHide('edit_contest_info');" class="hider">Edit</a>
+		<a href="javascript:toggleHide('edit_contest_info');" class="hider">Edit Description</a>
 		<div id="edit_contest_info" class="hidden">
 			<form action="view_set.php?cid=<? echo $CID; ?>" method="post">
 			<? do_print_textarea("info", "Information", "128px", $OK_CONTESTS[$CID]['info']); ?>
 			<input type="submit" name="update_info" value="Update">
 			</form>
 		</div>
-	</div>
 	<br><br>
 	<form action="edit_set.php" method="post">
 	<input type="hidden" name="sender_cid" value="<? echo $CID; ?>">
