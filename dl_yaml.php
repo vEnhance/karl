@@ -12,7 +12,10 @@ function addSpaces($text) {
 
 $appetizers = array('author', 'answer', 'title', 'difficulty', 'votes');
 $courses = array('statement', 'solution', 'comments');
+$n = 0;
 while ($prob_row = mysql_fetch_array($res)) {
+	$n++;
+	echo "# Problem $n" . "\n";
 	foreach ($appetizers as $entree)
 		if ($prob_row[$entree])
 			echo "$entree: " . $prob_row[$entree] . "\n";
