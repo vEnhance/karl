@@ -132,7 +132,7 @@ foreach ($url_array as $prefix => $remote_location) {
 MathJax.Hub.Config({tex2jax: 
 	{
 		inlineMath: [['$','$'], ['\\(','\\)']],
-		displayMath: [['\\[', '\\]'], ['\\begin{align*}', '\\end{align*}']],
+		displayMath: [['\\[', '\\]']],
 		processEnvironments: false
 	}
 });
