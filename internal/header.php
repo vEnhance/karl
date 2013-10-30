@@ -133,7 +133,7 @@ MathJax.Hub.Config({tex2jax:
 	{
 		inlineMath: [['$','$'], ['\\(','\\)']],
 		displayMath: [['\\[', '\\]']],
-		processEnvironments: false
+		processEnvironments: true
 	}
 });
 </script>
