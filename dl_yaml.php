@@ -17,10 +17,10 @@ while ($prob_row = mysql_fetch_array($res)) {
 	$n++;
 	echo "# Problem $n" . "\n";
 	foreach ($appetizers as $entree)
-		if ($prob_row[$entree])
+		if (array_key_exists($entree, $prob_row))
 			echo "$entree: " . $prob_row[$entree] . "\n";
 	foreach ($courses as $entree)
-		if ($prob_row[$entree])
+		if (array_key_exists($entree, $prob_row))
 			echo "$entree: |\n  " . addSpaces($prob_row[$entree]) . "\n";
 	echo '---' . "\n";
 }	
