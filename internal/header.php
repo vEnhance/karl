@@ -111,9 +111,9 @@ else {
 $css_number = $USER_DATA['css'];
 if (!$css_number) { $css_number = 53544; }
 $url_array = array();
-$aops_head = "http://www.aops.com/Forum/blog/styles/hyperion/styles/";
-$url_array["b"] = $aops_head . "$css_number.css";
-$url_array["c"] = $aops_head . "c$css_number.css";
+$aops_head = "http://data.artofproblemsolving.com/blogs/css/";
+$url_array["c"] = $aops_head . "$css_number.css";
+$url_array["b"] = "";
 $url_array["z"] = "";
 $url_array["k"] = "";
 $array_css_use_default_list = array('b', 'c', 'z');
