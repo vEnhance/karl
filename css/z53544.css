@@ -45,8 +45,9 @@ a.hider {
 	color: #CC00CC;
 }
 .set_problem_id {
-	font-weight: bold;
+	font-weight: 600;
 	color: darkblue;
+	font-size: 70%;
 }
 
 
