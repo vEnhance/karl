@@ -44,6 +44,10 @@ a.hider {
 .set_quick_comments {
 	color: #CC00CC;
 }
+.set_problem_id {
+	font-weight: bold;
+	color: darkblue;
+}
 
 
 /* Form input name */
