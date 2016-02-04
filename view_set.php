@@ -101,7 +101,7 @@ echo "</h2>";
 
 		echo "<td valign=\"top\">" . "\n";
 		echo "<a href=\"view_problem.php?id=$id\" class=\"probnum\">{$prob_row['zindex']}.</a> "; 
-		echo "<div class=\"set_problem_id\">$id</div>";
+		echo "<div class=\"set_problem_id\">[$id]</div>";
 
 		// Print votes and stuff
 		if ($this_votes > 0) {

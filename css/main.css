@@ -47,6 +47,11 @@ a.hider {
 	font-weight: bold;
 }
 
+.set_problem_id {
+	font-weight: bold;
+	color: darkblue;
+}
+
 .quick_comments {
 	color: #CC00CC;
 }
