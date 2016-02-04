@@ -1,5 +1,5 @@
 <?
-$TITLE_HEAD = "";
+$TITLE_HEAD = "Problem ";
 $TITLE_TAIL = "";
 require './internal/common.php';
 require './internal/header.php';
@@ -101,15 +101,17 @@ echo "</h2>";
 
 		echo "<td valign=\"top\">" . "\n";
 		echo "<a href=\"view_problem.php?id=$id\" class=\"probnum\">{$prob_row['zindex']}.</a> "; 
+		echo "<div class=\"set_problem_id\">$id</div>";
 
 		// Print votes and stuff
 		if ($this_votes > 0) {
-			echo "<br><span class=\"set_vote_count set_vote_count_positive\">+$this_votes</span>&nbsp;&nbsp;";
+			echo "<span class=\"set_vote_count set_vote_count_positive\">+$this_votes</span>&nbsp;&nbsp;";
 		}
 		else if ($this_votes < 0) {
-			echo "<br><span class=\"set_vote_count set_vote_count_negative\">$this_votes</span>&nbsp;&nbsp;";
+			echo "<span class=\"set_vote_count set_vote_count_negative\">$this_votes</span>&nbsp;&nbsp;";
 		}
 		echo "</td>" . "\n";
+
 		echo "<td style=\"font-size:10pt;\">";
 		echo "<a href=\"view_problem.php?id=$id\" class=\"set_author_name\">({$prob_row['author']})</a> " . "<span class=\"math_content\">{$prob_row['statement']}</span>" . "\n";
 		echo "<br>";

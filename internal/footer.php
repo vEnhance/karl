@@ -93,7 +93,7 @@ function do_print_recent($var_name, $header_name, $search_limit=7) {
 				$string_time = date("M j Y", $recent_time);
 				$string_adj = "on";
 			}
-			$res .= "<tr><td style=\"text-align:right;\" valign=\"top\"><a href=\"view_set.php?cid={$recent_row['cid']}&difficulty={$recent_row['difficulty']}\">{$recent_row['zindex']}.</a></td>
+			$res .= "<tr><td style=\"text-align:right;\" valign=\"top\"><a href=\"view_problem.php?id={$recent_row['id']}\">[{$recent_row['id']}]</a></td>
 				<td><a href=\"view_problem.php?id={$recent_row['id']}\">{$recent_row['title']}</a></td><td valign=\"top\">$string_time</td></tr>" . "\n";
 		}
 		$res .= "</tbody></table>" . "\n";
